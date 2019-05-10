@@ -1,4 +1,6 @@
 import os
+import requests
+import timeit
 
 
 working_dir = os.getcwd()
@@ -21,8 +23,6 @@ url_list=['http://snui.snu.ac.kr/main/css/NanumGothic.woff',
 
 def test_proxy_two():
     print("PROXY TIME")
-    import requests
-    import timeit
 
     test_proxy = '206.189.234.211:80'
 
@@ -42,8 +42,7 @@ def test_proxy_two():
 
 def test_proxy_three():
     print("DEFAULT TIME")
-    import requests
-    import timeit
+
 
     s = requests.Session()
 
